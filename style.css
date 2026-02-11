@@ -62,3 +62,11 @@ h1 {
     font-size: 1.5rem;
     padding: 0.3rem 0.6rem;
 }
+
+/* Position web map on page */
+.map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
