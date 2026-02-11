@@ -10,91 +10,22 @@ const map = new mapboxgl.Map({
 
 map.on('load', () => {
 
-    // Adding a data source containing GeoJSON data
-    map.addSource('torontopublicparks-data')
+    // Add a data source from a linked GeoJSON file
+    map.addSource('torontopublicparks-data', {
         type: 'geojson',
-        data: {
-        "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "High Park",
+        data: 'https://raw.githubusercontent.com/SAMhere123/SAMhere123.github.io/main/torontopublicparks.geojson'              
+    });
 
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.463574,
-                            43.646256
-                        ],
-                        "type": "Point"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Trinity Bellwoods Park",
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.413737,
-                            43.647226
-                        ],
-                        "type": "Point"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Christie Pits Park",
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.420677,
-                            43.664482
-                        ],
-                        "type": "Point"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Queen's Park",
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.392314,
-                            43.664328
-                        ],
-                        "type": "Point"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "St. James Park",
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.373085,
-                            43.650728
-                        ],
-                        "type": "Point"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Soraauren Avenue Park",
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.443328,
-                            43.648471
-                        ],
-                        "type": "Point"
-                    }
-                }
-            ]
-    }
+
+
+    // Visualize data layer on map
+    map.addLayer({
+        'id': 'torontopublicparks-layer',
+        'type': 'circle',
+        'source': 'torontopublicparks-data',
+        'paint': {
+            'circle-radius': 6,
+            'circle-color': '#4e342e'
+        }
+    });
 });
