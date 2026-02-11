@@ -13,10 +13,8 @@ map.on('load', () => {
     // Add a data source from a linked GeoJSON file
     map.addSource('torontopublicparks-data', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/SAMhere123/SAMhere123.github.io/main/torontopublicparks.geojson'              
+        data: 'https://raw.githubusercontent.com/SAMhere123/SAMhere123.github.io/main/torontopublicparks.geojson'
     });
-
-
 
     // Visualize data layer on map
     map.addLayer({
