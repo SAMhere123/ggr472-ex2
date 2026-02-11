@@ -1,0 +1,80 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "High Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.463574,
+                    43.646256
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trinity Bellwoods Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.413737,
+                    43.647226
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "St. James Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.373061,
+                    45.650821
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bluffer's Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.226994,
+                    43.712909
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Soraauren Avenue Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.443328,
+                    43.648471
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}
