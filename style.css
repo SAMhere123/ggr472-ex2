@@ -1,0 +1,64 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    background-color: brown;
+    color: blueviolet;
+}
+
+/* Custom Bootstrap theme: "forest" */
+[data-bs-theme="forest"] {
+    --bs-body-bg: #0b3d2e;
+    --bs-body-color: #e8f5e9;
+    --bs-primary: #4caf50;
+    --bs-secondary: #81c784;
+    --bs-border-color: #1b5e20;
+}
+
+/* Custom CSS: Change Navbar text to white */
+.navbar {
+    background-color: #0b3d2e !important;
+    color: #ffffff !important;
+}
+
+.navbar a,
+.navbar .nav-link,
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+/* Force Navbar search bar to stay white */
+.navbar .form-control {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #cccccc !important;
+}
+
+.navbar .form-control::placeholder {
+    color: #666666 !important;
+}
+
+/* Custom Bootstrap container: "textured-box". Image is stored in data folder */
+.textured-box {
+    background-image: url("data/treetexture.webp");
+    /* your JPG file */
+    background-size: cover;
+    /*fills the container */
+    background-position: center;
+    /* centers the texture */
+    background-repeat: no-repeat;
+    /*prevents tiling */
+    color: #ffffff;
+    /* text is white */
+    padding: 1.5rem;
+    /*adds space at the top of the title */
+    border-radius: 8px;
+    /*rounds the corners of the container */
+}
+
+.rating-star {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+}
