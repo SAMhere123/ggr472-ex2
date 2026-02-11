@@ -34,14 +34,14 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "St. James Park",
+                "name": "Christie Pits Park",
                 "marker-color": "#4e342e",
                 "marker-size": "medium"
             },
             "geometry": {
                 "coordinates": [
-                    -79.373061,
-                    45.650821
+                    -79.420677,
+                    43.664482
                 ],
                 "type": "Point"
             }
@@ -49,17 +49,32 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Bluffer's Park",
+                "name": "Queen's Park",
                 "marker-color": "#4e342e",
                 "marker-size": "medium"
             },
             "geometry": {
                 "coordinates": [
-                    -79.226994,
-                    43.712909
+                    -79.392314,
+                    43.664328
                 ],
                 "type": "Point"
-            }
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "St. James Park",
+                "marker-color": "#4e342e",
+                "marker-size": "medium"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.373085,
+                    43.650728
+                ],
+                "type": "Point"
+            },
         },
         {
             "type": "Feature",
